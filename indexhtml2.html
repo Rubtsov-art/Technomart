@@ -8,40 +8,43 @@
   <body>
     <header class="main-header">
 
+      <h1>ТЕХНОМАРТ</h1>
+
       <form action="htmlacademy.ru" method="post">
-        <input type="search" name="search" id="search-field">
+        <label for="search-field" class="visualy-hidden">Поиск</label>
+        <input type="search" name="search" id="search-field" placeholder="Поиск:">
       </form>
 
-        <a href="bookmark.html" class="bookmark">Закладки</a>
-        <a href="cart.html" class="cart">Корзина</a>
-        <a href="order.html" class="order">Оформить заказ</a>
+      <h2 class="visualy-hidden">Меню управления заказами</h2>
+        <a href="bookmark.html" class="bookmark" aria-label="перейти в закладки">Закладки</a>
+        <a href="cart.html" class="cart" aria-label="перейти в корзину">Корзина</a>
+        <a href="order.html" class="order" aria-label="Офорить заказ">Оформить заказ</a>
 
-      <h3>Интернет-магазин строительных материалов и инструментов для ремонта</h3>
+      <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
       <section class="header-contacts">
-        <p>+7 (812) 555-05-55</p>
+        <h2 class="visualy-hidden">Контакты</h2>
+        <button type="button">+7 (812) 555-05-55</button>
         <p>г. Санкт-Питербург. ул.Б.Конюшенная, д. 19/8</p>
       </section>
 
-      <nav class="header-navigation">
-        <a href="header-logo.html" class="header-logo">
-          <img src="img/index-logo.svg" width="60" height="20" alt="Техномарт">
-        </a>
-
+      <h2 class="visualy-hidden">Вход в учетную запись</h2>
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
-          <li class="registration">Регистрация</li>
+          <li class="login-link"><a href="login-link.html">Вход</a></li>
+          <li class="registration"><a href="registration.html">Регистрация</a></li>
         </ul>
 
-        <ul class="site-navigation">
-          <li><a href="home.html">Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="catolog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="offers.html">Спецпредложения</a></li>
-          <li><a href="deliver.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
+      <nav class="header-navigation">
+        <h2 class="visualy-hidden">Навигация по сайту</h2>
+          <ul class="site-navigation">
+            <li><a href="home.html">Главная</a></li>
+            <li><a href="company.html">Компания</a></li>
+            <li><a href="catolog.html">Каталог</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="offers.html">Спецпредложения</a></li>
+            <li><a href="deliver.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
       </nav>
     </header>
 
@@ -155,53 +158,78 @@
     <footer>
 
     <section class="footer-top">
-      <h2 class="footer-logo"><a href="logo.html" class="footer-logo">ТЕХНОМАРТ</a></h2>
-        <div class="footer-contacts">
-          <p>г. Санкт-Питербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7(982)555-05-55</p>
-        </div>
+      <h2 class="footer-logo">ТЕХНОМАРТ</h2>
 
-      <nav class="footer-navigation-first">
-        <ul class="footer-navigation-first">
-          <li class="footer-company"><a href="company.html">Компания</a></li>
-          <li class="footer-news"><a href="news.html">Новости</a></li>
-          <li class="footer-catalog"><a href="catalog.html">Католог</a></li>
-          <li class="footer-diliver"><a href="diliver.html">Доставка</a></li>
-          <li class="footer-contacts"><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+        <h3 class="visualy-hidden">Адрес</h3>
+          <p class="footer-contacts">г. Санкт-Питербург, ул. Б. Конюшенная, д. 19/8<br>
+            +7(982)555-05-55
+          </p>
 
-      <nav class="footer-navigation-second">
-        <ul class="footer-navigation-second">
-          <li class="footer-matirials"><a href="matirials.html">Материалы</a></li>
-          <li class="footer-tech"><a href="tech.html">Техника</a></li>
-          <li class="footer-tools"><a href="tools.html">Инструмент</a></li>
-          <li class="footer-offers"><a href="offers.html">Спецпредложения</a></li>
-        </ul>
-      </nav>
+        <h3 class="visualy-hidden">Навигация по сайту</h3>
+          <nav class="footer-navigation-first">
+            <ul class="footer-navigation-first">
+              <li class="footer-company">
+                <a href="company.html" aria-label="Компания">Компания</a>
+              </li>
+              <li class="footer-news">
+                <a href="news.html" aria-label="Новости">Новости</a>
+              </li>
+              <li class="footer-catalog">
+                <a href="catalog.html" aria-label="Каталог">Католог</a>
+              </li>
+              <li class="footer-diliver">
+                <a href="diliver.html" aria-label="Доставка">Доставка</a>
+              </li>
+              <li class="footer-contacts">
+                <a href="contacts.html" aria-label="Контакты">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+        <h3 class="visualy-hidden">Навигация по продукции</h3>
+          <nav class="footer-navigation-second">
+            <ul class="footer-navigation-second">
+              <li class="footer-matirials">
+                <a href="matirials.html" aria-label="Материалы">Материалы</a>
+              </li>
+              <li class="footer-tech">
+                <a href="tech.html" aria-label="Техника">Техника</a>
+              </li>
+              <li class="footer-tools">
+                <a href="tools.html" aria-label="Инструмент">Инструмент</a>
+              </li>
+              <li class="footer-offers">
+                <a href="offers.html" aria-label="Спецпредложения">Спецпредложения</a>
+              </li>
+            </ul>
+          </nav>
     </section>
 
     <section class="footer-bottom">
 
-      <div class="footer-left">
+      <h3 class="visualy-hidden">Копирайт</h3>
         <p> Copyright 2010-2017 Компания Техномарт</p>
         <p>Все права защищены</p>
-      </div>
 
-      <div class="footer-center">
+      <h3 class="visualy-hidden">Ссылки на социальные сети</h3>
         <ul class="sites">
-          <li class="vk"><a href="vk.com">vk</a></li>
-          <li class="fb"><a href="facebook.com">fb</a></li>
-          <li class="instagram"><a href="instagram.com">inst</a></li>
+          <li class="vk">
+            <a href="vk.com" aria-label="Вконтакте">vk</a>
+          </li>
+          <li class="fb">
+            <a href="facebook.com" aria-label="Фэйсбук">fb</a>
+          </li>
+          <li class="instagram">
+            <a href="instagram.com" aria-label="Инстаграм">inst</a>
+          </li>
         </ul>
-      </div>
 
-      <div class="footer-right">
+
+      <h3 class="visualy-hidden">Разработчик</h3>
         <p>Обратная связь</p>
-        <a href="email.html">mail@htmlacademy.com</a>
+        <a href="email.html" aria-label="Почта для связи с разработчикоом">mail@htmlacademy.com</a>
         <p>Разработано</p>
-        <a href="htmlacademy.com">htmlacademy.com</a>
-      </div>
+        <a href="htmlacademy.com" aria-label="Сайт разработчика">htmlacademy.com</a>
 
     </section>
 

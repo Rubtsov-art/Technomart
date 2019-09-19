@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-navigation li,
+.footer-navigation-first li,
+.footer-navigation-second li,
+.user-navigation li,
+.menu-list li,
+.slider li,
+.top-goods-list li,
+.top-makers-list li,
+.servises-list li,
+.deliver-company li,
+.sites li {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.header input {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  color: #000000;
+  background-color: #293449;
+}
+
+.red,
+.header button {
+  font-family: "Cuprum", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
