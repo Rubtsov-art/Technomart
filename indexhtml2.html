@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -360,6 +361,286 @@
     </footer>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Техномарт</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/CSS.css">
+  </head>
+
+  <body>
+    <header class="header">
+
+      <section class="header-top">
+          <h1 class="logo">ТЕХНОМАРТ</h1>
+
+          <form action="htmlacademy.ru" method="post">
+            <label for="search-field" class="visually-hidden">Поиск</label>
+            <input type="search" name="search" id="search-field" placeholder="      Поиск:">
+          </form>
+
+          <h2 class="visually-hidden">Меню управления заказами</h2>
+            <a href="bookmark.html" class="header-navigation bookmark" aria-label="перейти в закладки">Закладки: 0</a>
+            <a href="cart.html" class="header-navigation cart-catalog" aria-label="перейти в корзину">Корзина: 10</a>
+            <a href="order.html" class="header-navigation order" aria-label="Офорить заказ">Оформить заказ</a>
+      </section>
+
+      <section class="header-center">
+        <div class="container">
+          <div class="red">
+            <p>Интернет-магазин строительных материалов <br> и инструментов для ремонта</p>
+          </div>
+
+          <section class="header-contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <button class="red" type="button">+7 (812) 555-05-55</button>
+            <p>г. Санкт-Питербург. ул.Б.Конюшенная, д. 19/8</p>
+          </section>
+
+          <section  class="accaunt">
+            <button type="button" name="exit-account-button" aria-label="выход из учетной записи">Равшан Джамшутович</button>
+            <a href="#" class="users-orders" aria-label="мои заказы">Мои заказы</a>
+            <a href="#" class="users-accaunt" aria-label="Личный кабинет">Личный кабинет</a>
+          </section>
+
+        </div>
+      </section>
+
+      <div class="container">
+        <nav class="header-navigation">
+          <h2 class="visually-hidden">Навигация по сайту</h2>
+            <ul class="site-navigation">
+              <li><a href="home.html">Главная</a></li>
+              <li><a href="company.html">Компания</a></li>
+              <li><a href="catolog.html">Каталог</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="offers.html">Спецпредложения</a></li>
+              <li><a href="deliver.html">Доставка</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+          <div class="container">
+            <li class="breadcrumbs-home"><a href="Index.html">home</a></li>
+            <li class="breadcrumbs-catalog"><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs-tools"><a href="tools.html">Инструменты</a></li>
+            <li class="breadcrumbs-current">Перфораторы</li>
+          </div>
+        </ul>
+      </section>
+
+      <section class="main-title">
+        <div class="container">
+          <h1>Перфораторы</h1>
+        </div>
+      </section>
+
+      <div class="container main-content">
+        <section class="filter">
+          <form class="main" action="index.html" method="post">
+            <fieldset class="main-fieldset" name="filters">
+              <legend class="legend-of-main-fieldset">Фильтр:</legend>
+
+              <label class="label-for-cost" for="cost">ЦЕНА:</label>
+                <input type="range" id="cost" name="cost-field" max="40000" min="0" step="1">
+                  <div class="range-value">
+                    <p class="range-min">0</p><p class="range-middle">-</p><p class="range-max">40000</p>
+                  </div>
+
+              <label class="label-for-makers-select" for="makers">ПРОИЗВОДИТЕЛИ:</label>
+              <ul class="makers-select">
+                <li><input type="checkbox" name="makers" value="BOSCH" checked>BOSCH</li>
+                <li><input type="checkbox" name="makers" value="Intersol">ИНТЕРСКОЛ</li>
+                <li><input type="checkbox" name="makers" value="MAKITA" checked>MAKITA</li>
+                <li><input type="checkbox" name="makers" value="DEWALT">DEWALT</li>
+                <li><input type="checkbox" name="makers" value="HITACHI">HITACHI</li>
+              </ul>
+
+              <label class="label-for-power" for="power">ПИТАНИЕ:</label>
+              <ul class="power-button">
+                <li><input type="radio" name="power-field" value="Аккумуляторные">Аккумуляторные</li>
+                <li><input type="radio" name="power-field" value="Сетевые">Сетевые</li>
+              </ul>
+
+              <button class="show-button" type="submit" name="button" value="show">Показать</button>
+            </fieldset>
+          </form>
+        </section>
+
+        <section class="sort">
+          <div class="sort-top">
+            <h4>Сортировка:</h4>
+            <button class="button-cost" type="button" name="button-cost">ПО ЦЕНЕ</button>
+            <button class="button-type" type="button" name="button-type">ПО ТИПУ</button>
+            <button class="button-func" type="button" name="button-func">ПО ФУНКЦИОНАЛУ</button>
+            <button class="button-up" type="button" name="button-up">вверх</button>
+            <button class="button-down" type="button" name="button-down">вниз</button>
+          </div>
+
+          <div class="sort-center">
+            <ul class="sort-center-list">
+              <li class="BFG-3000">
+                <h4>
+                  <a href="BFG-3000.html">
+                    <span>Перфоратор BOSCH BFG-3000</span>
+                  </a>
+                </h4>
+                  <a href="BFG-3000.html">
+                    <img src="img/BFG-3000.jpg" alt="Перфоратор BOSCH BFG-3000">
+                  </a>
+                <p class="old-cost">22500 Р.</p>
+                <p class="new-cost">15500 Р.</p>
+                <button class="buy visually-hidden" type="button" name="buy">КУПИТЬ</button>
+                <button class="in-bookmark visually-hidden" type="button" name="in-bookmark">В ЗАКЛАДКИ</button>
+              </li>
+              <li class="BFG-6000">
+                <h4>
+                  <a href="BFG-6000.html">
+                    <span>Перфоратор BOSCH BFG-6000</span>
+                  </a>
+                </h4>
+                  <a href="BFG-6000.html">
+                    <img src="img/BFG-6000.jpg" alt="Перфоратор BOSCH BFG-6000">
+                  </a>
+                <p class="old-cost">30500 Р.</p>
+                <p class="new-cost">25500 Р.</p>
+                <button class="buy visually-hidden" type="button" name="buy">КУПИТЬ</button>
+                <button class="in-bookmark visually-hidden" type="button" name="in-bookmark">В ЗАКЛАДКИ</button>
+              </li>
+              <li class="BFG-2000">
+                <h4>
+                  <a href="BFG-2000.html">
+                    <span>Перфоратор BOSCH BFG-2000</span>
+                  </a>
+                </h4>
+                  <a href="BFG-2000.html">
+                    <img src="img/BFG-2000.jpg" alt="Перфоратор BOSCH BFG-2000">
+                  </a>
+                <p class="new-cost">12500 Р.</p>
+                <button class="buy visually-hidden" type="button" name="buy">КУПИТЬ</button>
+                <button class="in-bookmark visually-hidden" type="button" name="in-bookmark">В ЗАКЛАДКИ</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="pagination-list">
+            <li class="pagination-item-current"><a href="first.html">1</a></li>
+            <li class="pagination-item"><a href="second.html">2</a></li>
+            <li class="pagination-item"><a href="third.html">3</a></li>
+            <li class="pagination-item"><a href="next.html">СЛЕДУЮЩАЯ</a></li>
+          </ul>
+        </section>
+      </div>
+
+        <aside class="main-footer">
+          <div class="container">
+            <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+            <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+          </div>
+        </aside>
+    </main>
+
+    <footer>
+
+    <section class="footer-top">
+      <div class="container">
+        <h2 class="footer-logo">ТЕХНОМАРТ</h2>
+
+          <h3 class="visually-hidden">Адрес</h3>
+            <p class="footer-contacts">г. Санкт-Питербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7(982)555-05-55
+            </p>
+
+          <h3 class="visually-hidden">Навигация по сайту</h3>
+            <nav class="footer-navigation-first">
+              <ul class="footer-navigation-first">
+                <li class="footer-company">
+                  <a href="company.html" aria-label="Компания">Компания</a>
+                </li>
+                <li class="footer-news">
+                  <a href="news.html" aria-label="Новости">Новости</a>
+                </li>
+                <li class="footer-catalog">
+                  <a href="catalog.html" aria-label="Каталог">Католог</a>
+                </li>
+                <li class="footer-diliver">
+                  <a href="diliver.html" aria-label="Доставка">Доставка</a>
+                </li>
+                <li class="footer-contacts-bottom">
+                  <a href="contacts.html" aria-label="Контакты">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+          <h3 class="visually-hidden">Навигация по продукции</h3>
+            <nav class="footer-navigation-second">
+              <ul class="footer-navigation-second">
+                <li class="footer-matirials">
+                  <a href="matirials.html" aria-label="Материалы">Материалы</a>
+                </li>
+                <li class="footer-tech">
+                  <a href="tech.html" aria-label="Техника">Техника</a>
+                </li>
+                <li class="footer-tools">
+                  <a href="tools.html" aria-label="Инструмент">Инструмент</a>
+                </li>
+                <li class="footer-offers">
+                  <a href="offers.html" aria-label="Спецпредложения">Спецпредложения</a>
+                </li>
+              </ul>
+            </nav>
+      </div>
+    </section>
+
+    <section class="footer-bottom">
+      <div class="container">
+
+        <h3 class="visually-hidden">Копирайт</h3>
+          <p class="copyright"> &#169; 2010-2017 Компания Техномарт<br>
+          Все права защищены</p>
+
+        <h3 class="visually-hidden">Ссылки на социальные сети</h3>
+          <ul class="sites">
+            <li class="vk">
+              <a href="vk.com" aria-label="Вконтакте">vk</a>
+            </li>
+            <li class="fb">
+              <a href="facebook.com" aria-label="Фэйсбук">fb</a>
+            </li>
+            <li class="instagram">
+              <a href="instagram.com" aria-label="Инстаграм">inst</a>
+            </li>
+          </ul>
+
+
+        <h3 class="visually-hidden">Разработчик</h3>
+          <div class="developer">
+            <p class="developer-email">
+              <span>Обратная связь:</span>
+              <a href="email.html" aria-label="Почта для связи с разработчикоом">mail@htmlacademy.com</a>
+            </p>
+            <p class="developer-site">
+              <span>Разработано -</span>
+              <a href="htmlacademy.com" aria-label="Сайт разработчика">htmlacademy.com</a>
+            </p>
+          </div>
+
+      </div>
+    </section>
+
+    </footer>
+  </body>
+</html>
+>>>>>>> e49af6ef9e7fc41e2aadd4411287e65449a32bef
 =======
 <!DOCTYPE html>
 <html lang="ru">
