@@ -386,7 +386,7 @@ button.red {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-right: 10px:
+  margin-right: 10px;
 }
 
 .login-link a {
@@ -610,7 +610,7 @@ border: none;
   padding: 0px;
 }
 
-.menu-list li {
+.menu li {
   font-family: "Cuprum", Arial, sans-serif, Bold;
   font-size: 24px;
   line-height: 30px;
@@ -619,13 +619,13 @@ border: none;
   height: 124px;
 }
 
-.menu-list li p {
+.menu li p {
   display: block;
   padding-left: 22px;
   margin-bottom: 12px;
 }
 
-.menu-list li a {
+.menu li a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -640,11 +640,11 @@ border: none;
   border-radius: 5px 5px;
 }
 
-.menu-list li a:hover {
+.menu li a:hover {
  background-color: rgba(204, 204, 204, 0.7);
 }
 
-.menu-list li a:active {
+.menu li a:active {
   background-color: rgba(179, 179, 179, 1);
 }
 
@@ -697,6 +697,8 @@ border: none;
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 620px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-materials {
@@ -707,6 +709,8 @@ border: none;
   display: flex;
   flex-direction: column;
   width: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-tech {
